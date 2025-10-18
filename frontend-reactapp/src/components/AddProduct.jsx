@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import './style.css'
-
-const BASE_URL = import.meta.env.VITE_API_URL;
-const API_URL = `${BASE_URL}/productapi`;
+import config from "./config";
+const API_URL = `${config.url}/productapi`;
 
 function AddProduct() {
   const [product, setProduct] = useState({ name: "", description: "", price: "" });
