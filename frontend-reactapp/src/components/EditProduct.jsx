@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import './style.css'
-import config from "./config";
+import config from "./config.js";
 
 const API_URL = `${config.url}/productapi`;
 
